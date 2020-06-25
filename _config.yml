@@ -1,0 +1,17 @@
+safe: true
+title: Random Bit Stuffing
+email: git@0x414b.com
+description: > # this means to ignore newlines until "baseurl:"
+  Random Bit Stuffing.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "https://0x414b.com" # the base hostname & protocol for your site
+# twitter_username: jekyllrb
+github_username: a2karyak
+timezone: Etc/Zulu
+
+#gems:
+#  - jekyll-feed
+#  - jekyll-redirect-from
+
+# Build settings
+markdown: kramdown
