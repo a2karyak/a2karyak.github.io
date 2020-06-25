@@ -1,7 +1,19 @@
-<!DOCTYPE html>
-<html>
-<body>
-<h1>Holder, Place</h1>
-<p>Nothing to see here.</p>
-</body>
-</html>
+---
+layout: default
+---
+
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-link"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
+        <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
+        <p><span>{{ post.excerpt }}</span></p>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>
