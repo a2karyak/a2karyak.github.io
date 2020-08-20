@@ -15,3 +15,5 @@ timezone: Etc/Zulu
 
 # Build settings
 markdown: kramdown
+highlighter: rouge
+
