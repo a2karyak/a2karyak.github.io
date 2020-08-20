@@ -4,6 +4,6 @@ title: About
 permalink: /about/
 ---
 
-Random Bit Stuffing.
+To be written.
 
 

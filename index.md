@@ -1,10 +1,10 @@
 ---
 layout: default
+title: Home
+permalink: /index/
 ---
 
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
+<div class="site-content">
 
   <ul class="post-list">
     {% for post in site.posts %}

@@ -1,22 +1,23 @@
-<header class="site-header">
+    <div class="site-header">
+      <span class="site-title">{{ site.title }}</span>
+    </div>
 
-  <div class="wrapper">
+    <div class="site-menu">
+      <ul style="list-style: none;">
 
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-
-    <nav class="site-nav">
-      <a href="#" class="menu-icon">
-      </a>
-
-      <div class="trigger">
+        <li class="site-menu-item">
+          <a class="site-menu-link" href="/">Home</a>
+        </li>
         {% for page in site.pages %}
+        <li class="site-menu-item">
           {% if page.title %}
-          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+          <a class="site-menu-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
           {% endif %}
+        </li>
         {% endfor %}
-      </div>
-    </nav>
-
-  </div>
-
-</header>
+        <li class="site-menu-item">
+          <a class="site-menu-link" href="mailto:{{ site.email }}">Contact</a>
+        </li>
+        <div style="clear:both;"></div>
+      </ul>
+    </div>

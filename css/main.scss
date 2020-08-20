@@ -3,10 +3,107 @@
 ---
 @charset "utf-8";
 
-$base-font-family:	Helvetica, Arial, sans-serif;
-$base-font-size:	16px;
-$small-font-size:	$base-font-size * 0.875;
-$base-line-height:	1.25;
+body {
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	background-color: #d5d6e0;
+	color: #0f0f3f;
+}
 
-$text-color:	#000410;
-$background-color:	#f8f8f8;
+body > div {
+	padding: 4px 24px;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+}
+
+a:hover, a:active {
+	text-decoration: underline;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+img-caption {
+	font-size: 14px;
+}
+
+pre {
+	display: block;
+	font-family: 'Consolas','Courier New', monospace;
+	font-size: 14px;
+	border: 1px solid #e4e8ec;
+	background-color: #f0f0ff;
+	padding: 4px 8px;
+	white-space: pre-wrap;
+}
+
+.site-header {
+}
+
+.site-title {
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 4px;
+	font-size: 32px;
+	color: inherit;
+}
+
+.site-title a {
+	color: inherit;
+}
+
+.site-title a:hover, .site-title a:active {
+	text-decoration: none;
+}
+
+.site-menu {
+}
+
+.site-menu-item {
+	float: left;
+}
+
+.site-menu-link {
+	display: block;
+	padding: 20px 20px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+.site-content {
+}
+
+.post-list {
+	list-style: none;
+	> li {
+		margin-bottom: 24px;
+	}
+}
+
+.post-title {
+	font-size: 28px;
+	line-height: 1;
+	font-weight: 500;
+}
+
+.post-title a {
+	color: inherit;
+}
+
+.post-title a:hover, .post-title a:active {
+	text-decoration: none;
+}
+
+.post-meta {
+	color: gray;
+	font-style: italic;
+}
+
+.post-content {
+	margin-bottom: 24px;
+}
