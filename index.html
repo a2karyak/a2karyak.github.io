@@ -9,7 +9,7 @@ layout: default
       <li>
         <span class="post-title"><a href="{{site.baseurl}}{{ post.url }}">{{ post.title }}</a></span>
         <p class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</p>
-        <p><span>{{ post.excerpt }}</span></p>
+        {{ post.excerpt }}
       </li>
     {% endfor %}
   </ul>
