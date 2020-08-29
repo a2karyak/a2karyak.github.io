@@ -9,7 +9,7 @@ redirect_from: /2020/08/classic.html
 ---
 
 For various reasons, it may be necessary to compile modules for an existing binary kernel.
-If your module is rejected by the kernel with a message like:
+If your module is rejected by the kernel with the `disagrees about version of symbol` error like:
 
 ~~~
 [root@localhost /mnt]# insmod dm9000.ko
